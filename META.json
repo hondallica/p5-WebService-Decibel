@@ -52,6 +52,16 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/hondallica/p5-WebService-Decibel/issues"
+      },
+      "homepage" : "https://github.com/hondallica/p5-WebService-Decibel",
+      "repository" : {
+         "url" : "https://github.com/hondallica/p5-WebService-Decibel.git",
+         "web" : "https://github.com/hondallica/p5-WebService-Decibel"
+      }
+   },
    "version" : "0.01",
    "x_authority" : "cpan:HONDALLIC"
 }
