@@ -42,6 +42,15 @@
       },
       "runtime" : {
          "requires" : {
+            "Cache::LRU" : "0",
+            "Carp" : "0",
+            "Furl" : "0",
+            "JSON::XS" : "0",
+            "Moo" : "0",
+            "Net::DNS::Lite" : "0",
+            "URI" : "0",
+            "URI::QueryParam" : "0",
+            "namespace::clean" : "0",
             "perl" : "5.008001"
          }
       },
