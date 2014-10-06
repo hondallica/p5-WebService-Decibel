@@ -4,7 +4,7 @@
       "Hondallica <hondallica@gmail.com>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.142060",
+   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.142690",
    "license" : [
       "perl_5"
    ],
@@ -71,6 +71,6 @@
          "web" : "https://github.com/hondallica/p5-WebService-Decibel"
       }
    },
-   "version" : "0.02",
+   "version" : "0.03",
    "x_authority" : "cpan:HONDALLIC"
 }

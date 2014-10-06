@@ -8,7 +8,7 @@ use URI::QueryParam;
 use Carp;
 use Moo;
 use namespace::clean;
-our $VERSION = "0.02";
+our $VERSION = "0.03";
 
 
 $Net::DNS::Lite::CACHE = Cache::LRU->new( size => 512 );
@@ -109,11 +109,11 @@ WebService::Decibel - A simple and fast interface to the Decibel API
 
 =head1 DESCRIPTION
 
-The module provides a simple interface to the www.decibel.net API. To use this module, you must first sign up at https://developer.decibel.net to receive an Application ID and Key.
+The module provides a simple interface to the www.decibel.net API. To use this module, you must first sign up at L<https://developer.decibel.net> to receive an Application ID and Key.
 
 =head1 METHODS
 
-These methods usage: https://developer.decibel.net/our-api
+These methods usage: L<https://developer.decibel.net/our-api>
 
 =head3 album
 
@@ -146,7 +146,7 @@ These methods usage: https://developer.decibel.net/our-api
 
 =head1 SEE ALSO
 
-https://developer.decibel.net
+L<https://developer.decibel.net>
 
 =head1 LICENSE
 

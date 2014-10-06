@@ -21,11 +21,11 @@ WebService::Decibel - A simple and fast interface to the Decibel API
 
 # DESCRIPTION
 
-The module provides a simple interface to the www.decibel.net API. To use this module, you must first sign up at https://developer.decibel.net to receive an Application ID and Key.
+The module provides a simple interface to the www.decibel.net API. To use this module, you must first sign up at [https://developer.decibel.net](https://developer.decibel.net) to receive an Application ID and Key.
 
 # METHODS
 
-These methods usage: https://developer.decibel.net/our-api
+These methods usage: [https://developer.decibel.net/our-api](https://developer.decibel.net/our-api)
 
 ### album
 
@@ -57,7 +57,7 @@ These methods usage: https://developer.decibel.net/our-api
 
 # SEE ALSO
 
-https://developer.decibel.net
+[https://developer.decibel.net](https://developer.decibel.net)
 
 # LICENSE
 
