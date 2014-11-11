@@ -67,9 +67,9 @@ sub request {
 
     my ($minor_version, $status_code, $message, $headers, $content) = 
         $self->http->request(
-            scheme => 'http',
+            scheme => 'https',
             host => 'rest.decibel.net',
-            path_query => "v2/$path$query",
+            path_query => "v3/$path$query",
             method => 'GET',
         );
 
