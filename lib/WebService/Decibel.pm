@@ -5,6 +5,7 @@ use Net::DNS::Lite;
 use Furl;
 use URI;
 use URI::QueryParam;
+use Time::Piece;
 use Carp;
 use Moo;
 use namespace::clean;
@@ -36,7 +37,7 @@ my $build_http = sub {
             'Accept-Encoding' => 'gzip',
             'DecibelAppID' => $self->app_id,
             'DecibelAppKey' => $self->app_key,
-            'DecibelTimestamp' => '20140903 17:22:33',
+            'DecibelTimestamp' => localtime->datetime(T => ' '),
         ],
     );
     return $http;
