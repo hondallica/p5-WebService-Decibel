@@ -48,14 +48,15 @@ has 'http' => (
     default  => $build_http,
 );
 
-my @methods = qw( album albums artist artists disctags image recording recordings );
-for my $method (@methods) {
-    my $code = sub {
-        my ($self, %query_param) = @_;
-        return $self->request($method, \%query_param);
-    };
-    no strict 'refs';
-    *{$method} = $code; 
+
+sub artists {
+    my ($self, $query_param) = @_;
+    return $self->request("artists", $query_param);
+}
+
+sub artist_by_id {
+    my ($self, $id, $query_param) = @_;
+    return $self->request("artists/$id", $query_param);
 }
 
 
