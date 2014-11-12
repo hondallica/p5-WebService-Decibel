@@ -13,7 +13,7 @@ my $artists = $decibel->artists({
 ok $artists;
 warn Dumper $artists;
 
-my $artist = $decibel->artist_by_id(
+my $artist = $decibel->artist(
     $artists->{Results}[0]{Id},
     { depth => 'Biography' }
 );

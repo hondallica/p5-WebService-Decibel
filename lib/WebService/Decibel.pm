@@ -55,7 +55,7 @@ sub artists {
     return $self->request("artists", $query_param);
 }
 
-sub artist_by_id {
+sub artist {
     my ($self, $id, $query_param) = @_;
     return $self->request("artists/$id", $query_param);
 }
@@ -101,13 +101,11 @@ WebService::Decibel - A simple and fast interface to the Decibel API
         app_key => 'YOUR_APPLICATION_KEY',
     );
 
-    my $album = $decibel->album(id => '9e7eb16c-358f-e311-be87-ac220b82800d');
-    my $albums = $decibel->albums(artistName => 'Metallica');
-    my $artist = $decibel->artist(id => '09ff7ede-318f-e311-be87-ac220b82800d');
-    my $artists = $decibel->artists(name => 'Metallica');
-    my $disctags = $decibel->disctags(id => '9e7eb16c-358f-e311-be87-ac220b82800d');
-    my $recording = $decibel->recording(id => '01f034fc-b76c-11e3-be98-ac220b82800d');
-    my $recordings = $decibel->recordings(artist => 'Metallica', title => 'Battery');
+    my $artists = $decibel->artists({ name => 'Metallica' });
+    my $artist = $decibel->artist(
+        '09ff7ede-318f-e311-be87-ac220b82800d',
+        { depth => 'Biography' },
+    );
 
 =head1 DESCRIPTION
 
@@ -117,33 +115,16 @@ The module provides a simple interface to the www.decibel.net API. To use this m
 
 These methods usage: L<https://developer.decibel.net/our-api>
 
-=head3 album
+=head3 artists
 
-    my $album = $decibel->album(id => '9e7eb16c-358f-e311-be87-ac220b82800d');
-
-=head3 albums
-
-    my $albums = $decibel->albums(artistName => 'Metallica');
+    my $artists = $decibel->artists({ name => 'Metallica' });
 
 =head3 artist
 
-    my $artist = $decibel->artist(id => '09ff7ede-318f-e311-be87-ac220b82800d');
-
-=head3 artists
-
-    my $artists = $decibel->artists(name => 'Metallica');
-
-=head3 disctags
-
-    my $disctags = $decibel->disctags(id => '9e7eb16c-358f-e311-be87-ac220b82800d');
-
-=head3 recording
-
-    my $recording = $decibel->recording(id => '01f034fc-b76c-11e3-be98-ac220b82800d');
-
-=head3 recordings
-
-    my $recordings = $decibel->recordings(artist => 'Metallica', title => 'Battery');
+    my $artist = $decibel->artist(
+        '09ff7ede-318f-e311-be87-ac220b82800d',
+        { depth => 'Biography' },
+    );
 
 
 =head1 SEE ALSO
